@@ -25,3 +25,17 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.bouncer{
+  border:10px solid rgb(234, 0, 255);
+  width: 50px;
+  height: 50px;
+  border-radius:10px;
+  position:absolute;
+}
+.pop{
+  border:10px solid rgb(42, 196, 199);
+  width: 50px;
+  height: 50px;
+  border-radius:10px;
+  position:absolute;
+}
