@@ -10,5 +10,5 @@ bouncyDancer.prototype.oldStep = makeDancer.prototype.step;
 
 bouncyDancer.prototype.step = function () {
   this.oldStep();
-  this.$node.toggle();
+  // this.$node.toggle();;
 };

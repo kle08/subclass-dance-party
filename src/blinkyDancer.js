@@ -18,9 +18,18 @@
 //return blinkyDancer;
 //};
 
-var makeBlinkyDancer = function (top, left, timeBetweenSteps) {
+var makeBlinkyDancer = function (top, left, timeBetweenSteps, color) {
   //create subclass to refer to makeDancer
   makeDancer.call(this, top, left, timeBetweenSteps);
+  var randomColor = function () {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+  this.$node.css("border-color", randomColor());
 };
 makeBlinkyDancer.prototype = Object.create(makeDancer.prototype); // Override makeBlinkyDancer's prototype
 makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
