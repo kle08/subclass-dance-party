@@ -17,7 +17,7 @@ popDancer.prototype.constructor = popDancer;
 
 popDancer.prototype.oldStep = makeDancer.prototype.step;
 
-popDancer.prototype.step = function () {
-  this.oldStep();
-  // this.$node.toggle();
-};
+// popDancer.prototype.step = function () {
+//   this.oldStep();
+//   // this.$node.toggle();
+// };
