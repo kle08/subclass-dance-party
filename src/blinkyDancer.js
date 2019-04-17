@@ -28,8 +28,8 @@ var makeBlinkyDancer = function (top, left, timeBetweenSteps, color) {
       color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
-  }
-  this.$node.css("border-color", randomColor());
+  };
+  this.$node.css('border-color', randomColor());
 };
 makeBlinkyDancer.prototype = Object.create(makeDancer.prototype); // Override makeBlinkyDancer's prototype
 makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
